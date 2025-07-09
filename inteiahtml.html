@@ -2,8 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Planta RA</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>Planta en Realidad Aumentada</title>
+    https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js
     <style>
       body {
         margin: 0;
@@ -43,19 +43,18 @@
   </head>
   <body>
     <model-viewer
-      id="modelo"
-      src="planta.glb"
+      src="https://spiderflorez.github.io/AR-demo/planta.glb"
+      ios-src="https://spiderflorez.github.io/AR-demo/planta.glb"
       alt="Planta en 3D con realidad aumentada"
       ar
       ar-modes="webxr scene-viewer quick-look"
-      ios-src="planta.glb"
       auto-rotate
       camera-controls
       shadow-intensity="1"
       exposure="1">
-      
       <button slot="ar-button">Ver en tu espacio</button>
     </model-viewer>
   </body>
 </html>
+
 
