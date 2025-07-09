@@ -2,32 +2,38 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Planta RA</title>
+    <title>Modelo RA Planta</title>
+    <!-- Librería model-viewer -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <style>
       body {
         margin: 0;
-        height: 100vh;
-        background: #eee;
+        padding: 0;
+        background: #f0f0f0;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        height: 100vh;
       }
       model-viewer {
         width: 100%;
         height: 100%;
+        max-height: 100vh;
       }
     </style>
   </head>
   <body>
-<model-viewer
-  src="ImageToStl.com_indoor+plant_02.glb"
-  ar
-  ar-modes="scene-viewer webxr quick-look"
-  camera-controls
-  auto-rotate
-  shadow-intensity="1"
-  alt="Planta 3D RA">
-</model-viewer>
+    <!-- Visor 3D con RA habilitada -->
+    <model-viewer
+      src="ImageToStl.com_indoor+plant_02.glb"
+      alt="Planta en 3D con realidad aumentada"
+      ar
+      ar-modes="scene-viewer webxr quick-look"
+      environment-image="neutral"
+      camera-controls
+      auto-rotate
+      shadow-intensity="1"
+      exposure="1">
+    </model-viewer>
   </body>
 </html>
